@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "New Amsterdam", sans-serif;
+}
+.nav{
+    background-color: rgba(13, 13, 47, 0.956);
+    color: white;
+    display: flex;
+    height: 11vh;
+}
+.title{
+    margin: 10px 0px 0px 40px;
+}
+.title-name{
+    font-weight: 100;
+    font-size: 45px;
+}
+.search{
+    margin: 18px 0px 0px 10%;
+}
+.search-text{
+    height: 5vh;
+    width: 200%;
+    padding-left: 25px;
+    font-size: 17px;
+    font-weight: normal;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.user{
+    margin: 25px 120px  0 0;
+    position: relative;
+    left: 20%;
+    cursor: pointer;
+}
+.user-title{
+    font-size: 25px;
+    font-weight: 300;
+    position: relative;
+    width: max-content;
+}
+.user-title::before{
+    content: "";
+    background-color:white ;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 100px;
+    transition: all 0.5s ease-in-out;
+}
+.user-title:hover::before{
+    width: 100%;
+    height: 4px;
+}
+.home-link{
+    text-decoration: none;
+    color: white;
+}
+.cart{
+    position: relative;
+    left: 20%;
+    margin: 25px 0 0 0;
+    font-size: 25px;
+}
+.cart-link{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.cart-items{
+    font-size: 27px;
+    margin-left: 6px;
+}
+.products{
+    display: flex;
+    margin: 1.5% 0px 6% 0px;
+    overflow: hidden;
+}
+.products-title{
+    margin: 15px 0px 0px 25px;
+    font-weight: normal;
+    font-size: 30px;
+    font-weight: 200;
+}
+.products-items{
+    height: 22vh;
+    margin-left: 25px;
+}
+.products-names{
+    text-align: center;
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight: 100;
+}
+.products-price{
+    font-size: 20px;
+    text-align: center;
+}
+.submenu ul li{
+    list-style: none;
+    font-size: 22px;
+    margin: 15px 40px;
+    font-weight: 200;
+}
+.submenu{
+    background: rgb(41, 39, 39);
+    color: white;
+    height: 8.5vh;
+    padding: 5px 0 0 3.5%;
+}
+.submenu ul {
+    display: flex;
+}
+.mobilepage-section{
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    gap: 2px;
+    margin: 5% 0 0 0px;
+    overflow: hidden;
+}
+.itemView{
+    margin: 40px 0px 0px 50px;
+}
+.pageImg{
+    width: 250px;
+    height: 170px;
+}
+.pageImg img{
+    width: 100;
+    margin-left: 10px;
+}
+.pageNames{
+    font-size: 25px;
+}
+.tabs{
+    text-decoration: none;
+    color: azure;
+}
+.tabs-options{
+    position: relative;
+    width: max-content;
+}
+.tabs-options::before{
+    content: "";
+    background-color:white ;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    border-radius: 100px;
+    transition: all 0.1s ease-in-out;
+}
+.tabs-options:hover::before{
+    width: 100%;
+    height: 4px;
+}
+.cart-block{
+    text-align: center;
+    margin: 3% 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.cart-block-heading{
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+.cart-block-para{
+    font-size: 20px;
+    margin: 3%;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+}
+.cart-items-block{
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    gap: 5px;
+    margin: 5% 0 0 5px;
+    align-items: center;
+    position: relative;
+    left: 20%;
+    margin: 5% 0 0 0;
+    width: 55%;
+    height: 25vh;
+    border-radius: 20px;
+}
+.cart-items-block-image{
+    height: 25vh;
+    margin-left: 35px;
+}
+.cart-items-block-name{
+    font-size: 30px;
+    font-weight: 200;
+}
+.cart-items-block-sub{
+    display: flex;
+    flex-direction: column;
+    width: 125%;
+}
+.cart-items-block-price{
+    font-size: 35px;
+    font-weight: 100;
+    padding-top: 25px;
+}
+.remove-cart{
+    height: 8vh;
+    width: 50%;
+    font-size: 27px;
+    font-weight: 100;
+    border: none;
+    border-radius: 25px;
+    background-color: aquamarine;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    min-width: 100px;
+    margin-left: 100px;
+    position: relative;
+}
+.remove-cart:hover{
+    color: aliceblue;
+    background-color: rgb(208, 14, 14);
+}
+.shirt-item-view{
+    margin: 30px 15px 0 15px;
+}
+.page-Img{
+    margin-left: 32%;
+}
+.item-image{
+    height: 23vh;
+}
+.shirts-item-name{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+}
+.ind-page{
+    display: flex;
+    margin: 7% 0 0 8%;
+}
+.ind-item-image{
+    height: 55vh;
+}
+.ind-content{
+    margin: 7% 0 0 15%;
+}
+.ind-content-name{
+    font-size: 45px;
+}
+.ind-content-price{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+.ind-content-size{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+.ind-content-mat{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+.ind-content-button{
+    margin: 4% 0 0 0;
+    width: 60%;
+    height: 8vh;
+    font-size: 24px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 100;
+    background-color:rgb(236, 227, 58);
+    transition: 0.1s linear;
+}
+.ind-content-button:hover{
+    background-color: rgb(35, 230, 35);
+}
+.page-Img-tv{
+    margin-left: 20%;
+}
+.item-image-tv{
+    height: 17vh;
+}
+.shirts-item-name-cam{
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;    
+    padding: 10px 0 0 70px;
+}
+.page-Img-cam{
+    margin-left: 35%;
+}
+.item-image-cam{
+    margin-left: 5%;
+    height: 15vh;
+}
+.shirt-item-view-cam{
+    margin-top: 40px;
+}
+.ind-item-image-cam{
+    height: 10vh;
+}
+.shirts-item-name-lap{
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    padding-left: 25px;
+}
+.page-Img-lap{
+    margin-left: 15%;
+}
+.shirts-item-name-mob{
+    padding-left: 18%;
+    font-size: 25px;
+    font-weight: 200;
+}
+.page-Img-mob{
+    margin-left: 20%;
+}
+.products-box{
+    margin-left: 2.1%;
+}
+.products-items-book{
+    margin-left: 30%;
+    height: 22vh;
+}
+.products-items-saree{
+    height: 22vh;
+    margin-left: 25%;
+}

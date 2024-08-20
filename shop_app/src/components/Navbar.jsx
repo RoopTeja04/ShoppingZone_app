@@ -10,7 +10,7 @@ const Navbar = () => {
         <>
             <div className="nav">
                 <div className="title">
-                    <h1 className="title-name">ShopZone</h1>
+                    <h1 className="title-name">ShoppingZone</h1>
                 </div>
                 <div className="search">
                     <input className="search-text" type="text" placeholder="Search"/> 
